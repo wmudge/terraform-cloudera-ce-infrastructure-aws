@@ -31,6 +31,7 @@ terraform {
 locals {
   pricing_os_map = {
     "Red Hat Enterprise Linux" = "RHEL"
+    "Red Hat BYOL Linux"       = "RHEL",
     "Ubuntu"                   = "Linux"
     "Linux/UNIX"               = "Linux"
     # "Windows"                  = "Windows"
