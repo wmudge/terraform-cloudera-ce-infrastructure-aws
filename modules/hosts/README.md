@@ -32,6 +32,7 @@ The sample `terraform.tfvars.sample` describes the required inputs for the examp
 | Name | Version |
 |------|---------|
 | <a name="provider_aws"></a> [aws](#provider\_aws) | >= 4.60.0 |
+| <a name="provider_aws.pricing_calculator"></a> [aws.pricing\_calculator](#provider\_aws.pricing\_calculator) | >= 4.60.0 |
 
 ## Modules
 
@@ -45,6 +46,7 @@ No modules.
 | [aws_instance.pvc_base](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance) | resource |
 | [aws_volume_attachment.inventory](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/volume_attachment) | resource |
 | [aws_ami.pvc_base](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ami) | data source |
+| [aws_pricing_product.pvc_base](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/pricing_product) | data source |
 
 ## Inputs
 
@@ -68,5 +70,6 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_hosts"></a> [hosts](#output\_hosts) | Hosts |
+| <a name="output_pricing"></a> [pricing](#output\_pricing) | The hourly cost and details for each instance of this module. |
 | <a name="output_storage_volumes"></a> [storage\_volumes](#output\_storage\_volumes) | Additional Storage Volumes |
 <!-- END_TF_DOCS -->
